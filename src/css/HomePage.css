@@ -1,0 +1,37 @@
+.gg-add {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 44px; /* Increased width */
+    height: 44px; /* Increased height */
+    border: 2px solid;
+    transform: scale(1.5); /* Increased scale */
+    border-radius: 44px; /* Increased border-radius */
+    margin-left: 50%;
+    transform: translateX(-50%); /* Center the circle using translateX */
+}
+
+.gg-add::after,
+.gg-add::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px; /* Increased width */
+    height: 4px; /* Increased height */
+    background: currentColor;
+    border-radius: 10px; /* Increased border-radius */
+    top: 50%; /* Move the position to the center of the circle using top */
+    left: 50%; /* Move the position to the center of the circle using left */
+    transform: translate(-50%, -50%); /* Center the elements using translate */
+}
+
+.gg-add::after {
+    width: 4px; /* Increased width */
+    height: 20px; /* Increased height */
+}
+
+.container{
+    margin-top: 10%;
+    text-align: center;
+}

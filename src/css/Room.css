@@ -1,0 +1,79 @@
+/* Add the following CSS to your existing CSS styles */
+
+.product-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin:0 ;
+  list-style: none;
+}
+  
+.product-item {
+  
+  flex: 1 0 calc(20% - 20px);
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 15px; /* Increase border-radius for rounded corners */
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px; /* Increase height for a bigger product square */
+  background-size: cover;
+}
+  
+  .product-item.active {
+    background-color: green;
+  }
+  
+  .product-item.inactive {
+    background-color: red;
+  }
+
+  /* Add responsive styling for PC screens */
+  @media (min-width: 769px) {
+    .product-list {
+      margin-left: 20%;
+      gap: 60px;
+    }
+    .addprod{
+      
+      margin-left: 25%;
+      max-width: 60%;
+    }
+    .addbtn{
+      margin-right: 35%;
+      max-width: 200px;
+      background-color: #007bff;
+      color: #000;
+      border-radius: 10px;
+      
+     }
+    
+  }
+
+  /* Add responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .product-list {
+      margin-left: 5%;
+    }
+    .product-item {
+      flex-basis: calc(50% - 20px);
+      height: 100px; /* Reduce height for smaller screens */
+    }
+    .addprod{
+      margin-left: 10%;
+      max-width: 75%;
+    }
+    .addbtn{
+      
+      max-width: 30%;
+     }
+  }
+ 

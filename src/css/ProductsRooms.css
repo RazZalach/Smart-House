@@ -1,0 +1,33 @@
+.productsRooms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Set the flex direction to column for centering */
+   
+}
+
+
+.productSelect {
+  font-size: 16px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+
+  background-color: #fff;
+  color: #333;
+}
+
+.addButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}

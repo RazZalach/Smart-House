@@ -1,0 +1,69 @@
+.container{
+  margin-top: 0%; 
+}
+.delbtn{
+  border: none;
+  background-color: inherit;
+}
+.delbtn:hover{
+  background-color: inherit;
+}
+
+.allrooms {
+  display: flex;
+  flex-wrap: wrap; /* To allow items to wrap to the next row */
+  justify-content: space-between; /* To evenly distribute items */
+  gap: 20px; /* Add spacing between items */
+}
+
+.room {
+  flex: 1 0 calc(33.33% - 20px); /* To make each room take one-third of the container width with spacing between them */
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.square {
+  width: 100%;
+  height: 100px; /* You can adjust the height based on your preference */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Add rounded corners for a nicer look */
+}
+
+.content {
+  color: #fff; /* Add a font color for better contrast */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-height: 200vh;
+    max-width: 80%;
+    border-radius: 30px;
+    margin-left: 10%;
+  }
+  .nameroom{
+    margin-right: 15%;
+    color:#000000;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .room {
+    flex-basis: calc(50% - 20px); /* On smaller screens, make each room take half of the container width with spacing between them */
+  }
+  .container {
+    max-height: 100vh;
+    max-width: 100%;
+    border-radius: 30px;
+  
+  }
+  .nameroom{
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+}
